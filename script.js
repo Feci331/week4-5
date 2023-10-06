@@ -1,26 +1,22 @@
-console.log("hello world")
+const arr = [1, 2, 3, 4, 5]
 
-function domManipulation() {
-    const rootElement = document.querySelector(`#root`)
-    console.log(rootElement)
-    rootElement.innerHTML = "this is done by dom manipulaton"
+function retutnDouble(number) {
+    return number *2
 }
 
-function logClick() {
-    console.log(`clicked`)
+const returnDouble2 = number => number * 2
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(retutnDouble(arr[i] *2))
 }
-
-let tickCount = 0
-
-function logTick() {
-    console.log(`tick ${tickCount}`)
-    tickCount++
+/* 
+document logDouble(number) {
+    console.log(number *2)
 }
+    
+arr.forEach(function(element) {
+console.log(element * 2)
+})
+ */
 
-window.addEventListener(`load`, domManipulation)
-window.addEventListener(`click`, logClick)
-
-window.setInterval(logTick, 1000)
-
-
-
+arr.forEach(element => console.log(element * 2)) //inline meghivas
