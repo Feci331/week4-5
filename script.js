@@ -1,62 +1,26 @@
-/* let x = "asd"
-let y = 12
-let z = false
+console.log("hello world")
 
-let arr =["egy", "kettő", "három"]
-let arr2 =[12, 2, 3]
-let arr3 =[ture, false]
-let arr4 =["alma", 1, true]
-
-let obj1 = {
-    key: 
-    key2: 
-    key3: 
-    key4: 
-    key5: {
-        nestkey
-    }
-
-
-
+function domManipulation() {
+    const rootElement = document.querySelector(`#root`)
+    console.log(rootElement)
+    rootElement.innerHTML = "this is done by dom manipulaton"
 }
 
- */
-/* function myFunc() {
-    console.log("this is my func")
+function logClick() {
+    console.log(`clicked`)
 }
 
-myFunc()
+let tickCount = 0
 
-function greetMe(param) {
-    console.log(`Szia ${param}!`)
+function logTick() {
+    console.log(`tick ${tickCount}`)
+    tickCount++
 }
 
+window.addEventListener(`load`, domManipulation)
+window.addEventListener(`click`, logClick)
 
-greetMe("argument")
- */
+window.setInterval(logTick, 1000)
 
-/* function addTwoNumbers(number1, number2) {
-    let sum = number1 + number2
-    console.log(`the sum of two niumbers (${number1}, ${number2}) is: ${sum}`)
-    return sum
-}
-
-let resultOfAddTwoNumbers = addTwoNumbers(10, 2)
-console.log(`the result of resultOfAddTwoNumbers is: ${resultOfAddTwoNumbers}`)
-
- */
-
-
-
-function cbExample () {
-    console.log("i am calback function")
-}
-
-function funcExample(name, callback) {
-    console.log(`hello ${name}`)
-    callback()
-}
-
-funcExample("Feri", cbExample)
 
 
